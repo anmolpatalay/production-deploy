@@ -4,7 +4,7 @@ function App() {
   const [form, setForm] = useState({ name: "", age: "", gender: "" });
   const [people, setPeople] = useState([]);
 
-  const backendURL = "http://localhost:5000"; // e.g. from Render
+  const backendURL = "https://production-deploy.onrender.com"; // e.g. from Render
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
